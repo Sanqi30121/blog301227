@@ -37,8 +37,8 @@
 - 新相册：复制 `content/albums/example/`，把照片放进该相册自己的 `images/`，修改 `album.json`，再向 `content/albums/index.json` 添加一条记录。
 - 新动态：编辑 `content/moments/moments.json`。
 - 链接/友链：编辑 `content/links/links.json`；当前默认是空数组，不包含任何外部链接。
-- 页面样式：`assets/css/style.css`。
-- 页面功能：`assets/js/app.js`。正常管理内容时不需要修改它。
+- 页面样式：`assets/css/blog-20261004.css`。
+- 页面功能：`assets/js/blog-20261004.js`。正常管理内容时不需要修改它。
 
 ## 手机端与相册交互
 
