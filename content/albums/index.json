@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "example-album",
+    "title": "示例相册",
+    "meta": "2026.10 · 示例",
+    "desc": "这是相册目录与照片信息的结构案例。正式使用时替换为自己的照片。",
+    "cover": "content/albums/example/images/example-photo.svg",
+    "count": 1,
+    "data": "content/albums/example/album.json"
+  }
+]

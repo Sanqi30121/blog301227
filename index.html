@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="三七的个人博客。">
+  <title>三七的博客</title>
+  <script>
+  (()=>{try{const s=localStorage.getItem('sanqi-theme');const d=s?s==='dark':matchMedia('(prefers-color-scheme:dark)').matches;if(d)document.documentElement.dataset.theme='dark'}catch(e){}})();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<header><div class="wrap nav">
+  <a class="brand route" href="#home" id="brand">三七的博客</a>
+  <div class="search desktop-search"><input class="search-input" type="search" placeholder="搜索文章、相册、动态…" autocomplete="off" aria-label="搜索"><span class="search-icon">⌕</span><div class="search-results" aria-live="polite"></div></div>
+  <nav class="navlinks" aria-label="主导航"><a class="route" data-nav="home" href="#home">主页</a><a class="route" data-nav="articles" href="#articles/all/1">文章</a><a class="route" data-nav="gallery" href="#gallery/1">相册</a><a class="route" data-nav="moments" href="#moments">动态</a><a class="route" data-nav="links" href="#links">链接</a><a class="route" data-nav="about" href="#about">关于</a></nav>
+  <div class="nav-actions"><button class="mobile-search" id="mobileSearchBtn" aria-label="打开搜索" aria-expanded="false">⌕</button><button class="theme" id="theme" aria-label="切换夜间模式" aria-pressed="false" title="切换夜间模式">◐</button></div>
+  <div class="mobile-search-row"><div class="search"><input class="search-input" type="search" placeholder="搜索文章、相册、动态…" autocomplete="off" aria-label="移动端搜索"><span class="search-icon">⌕</span><div class="search-results" aria-live="polite"></div></div></div>
+</div></header>
+<main class="wrap" id="main">
+  <section class="view" id="home"><div class="hero"><div><h1 id="heroTitle"></h1><p id="heroText"></p></div><aside class="hero-profile"><div class="hero-top"><div class="hero-avatar" id="heroAvatar"></div><div><div class="hero-name" id="heroName"></div><div class="hero-role" id="heroRole"></div></div></div><p class="hero-bio" id="heroBio"></p><div class="hero-links" id="heroLinks"></div></aside></div><div class="section-head"><h2>最近文章</h2><a class="route" href="#articles/all/1">查看全部 →</a></div><div class="post-list" id="homePosts"></div><div class="section-spacer" aria-hidden="true"></div><div class="section-head"><h2>最近相册</h2><a class="route" href="#gallery/1">查看全部 →</a></div><div class="home-albums" id="homeGallery"></div></section>
+  <section class="view clean-page" id="articles"><h1 class="page-title">文章</h1><nav class="article-filters" id="articleFilters" aria-label="文章分类"></nav><div class="post-list" id="allPosts"></div><nav class="pager" id="articlePager" aria-label="文章分页"></nav></section>
+  <section class="view clean-page" id="gallery"><h1 class="page-title">相册</h1><div class="album-grid" id="galleryGrid"></div><nav class="pager" id="albumPager" aria-label="相册分页"></nav></section>
+  <section class="view" id="album"><div class="album-head"><div><a class="back route" href="#gallery/1">← 返回相册</a><h1 class="page-title" id="albumTitle"></h1><div class="album-meta" id="albumMeta"></div></div><p class="album-desc" id="albumDesc"></p></div><div class="album-photo-grid" id="albumPhotos"></div><button class="loadmore" id="albumLoadMore" hidden>加载更多</button></section>
+  <section class="view clean-page" id="moments"><h1 class="page-title">动态</h1><div id="momentGroups"></div></section>
+  <section class="view clean-page" id="links"><h1 class="page-title">链接</h1><div id="linkGroups"></div></section>
+  <section class="view" id="about"><div class="about"><div class="avatar" id="aboutAvatar"></div><div><h2 id="aboutTitle"></h2><div id="aboutParagraphs"></div><div class="facts" id="aboutFacts"></div></div></div></section>
+  <section class="view" id="article"><article class="article"><a class="back route" href="#articles/all/1">← 返回文章</a><div class="eyebrow" id="articleMeta"></div><h1 id="articleTitle"></h1><p class="lead" id="articleLead"></p><div id="articleBody"></div><nav class="article-nav" id="articleNav" aria-label="相邻文章"></nav></article></section>
+  <section class="view" id="notfound"><div class="empty"><h1>没有找到这个页面</h1><p><a class="route" href="#home">返回主页 →</a></p></div></section>
+</main>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="照片预览"><button class="lb-close" id="closeLb" aria-label="关闭">×</button><button class="lb-prev" id="lbPrev" aria-label="上一张">‹</button><img id="lbImg" alt=""><button class="lb-next" id="lbNext" aria-label="下一张">›</button><div class="lbcap"><span id="lbCap"></span><span class="lbcounter" id="lbCounter"></span></div></div>
+<button class="backtop" id="backtop" aria-label="返回顶部">↑</button>
+<footer><div class="wrap foot"><span id="footerLeft"></span><span id="footerRight"></span></div></footer>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

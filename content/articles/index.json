@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "example-post",
+    "title": "示例文章：开始管理博客内容",
+    "date": "2026.10.04",
+    "tag": "示例",
+    "desc": "这是一篇用于展示文章文件结构的案例，正式使用时可以复制目录后替换内容。",
+    "lead": "文章正文与文章列表信息已经分开保存，后续新增文章不需要修改页面结构。",
+    "content": "content/articles/example/article.html"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "slug": "example-album",
+  "title": "示例相册",
+  "meta": "2026.10 · 示例",
+  "desc": "这是相册目录与照片信息的结构案例。正式使用时替换为自己的照片。",
+  "cover": "content/albums/example/images/example-photo.svg",
+  "photos": [
+    {
+      "src": "content/albums/example/images/example-photo.svg",
+      "title": "示例照片 · 01",
+      "text": "照片文件和照片说明都放在这个相册自己的目录中。"
+    }
+  ]
+}
