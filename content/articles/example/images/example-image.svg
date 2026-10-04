@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">文章配图示例</title>
+  <desc id="desc">用于说明每篇文章可以拥有自己的 images 文件夹。</desc>
+  <rect width="1200" height="800" fill="#eeeeee"/>
+  <rect x="80" y="80" width="1040" height="640" rx="24" fill="#dddddd"/>
+  <text x="600" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" fill="#555555">ARTICLE IMAGE</text>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#777777">替换为你自己的文章照片</text>
+</svg>
