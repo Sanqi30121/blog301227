@@ -18,7 +18,10 @@ function renderSiteShell(){
   $('#heroTitle').innerHTML=site.hero?.title||''; $('#heroText').textContent=site.hero?.text||'';
   $('#heroAvatar').textContent=site.profile?.avatar||''; $('#heroName').textContent=site.profile?.name||''; $('#heroRole').textContent=site.profile?.role||''; $('#heroBio').textContent=site.profile?.bio||'';
   const profileLinks=site.profile?.links||[];
-  $('#heroLinks').innerHTML=profileLinks.map(l=>l.url?`<a class="hero-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`:'').join('')+'<a class="hero-link route" href="#about">关于 →</a>';
+  $('#heroLinks').innerHTML=profileLinks.map(l=>l.url
+    ? `<a class="hero-link" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`
+    : `<span class="hero-link hero-link-empty" aria-disabled="true">${esc(l.label)} ↗</span>`
+  ).join('')+'<a class="hero-link route" href="#about">关于 →</a>';
   $('#aboutAvatar').textContent=site.about?.avatar||''; $('#aboutTitle').textContent=site.about?.title||''; $('#aboutParagraphs').innerHTML=(site.about?.paragraphs||[]).map(p=>`<p>${esc(p)}</p>`).join('');
   $('#aboutFacts').innerHTML=(site.about?.facts||[]).map(f=>`<div class="fact"><span>${esc(f.label)}</span>${esc(f.value)}</div>`).join('');
   $('#footerLeft').textContent=site.footer?.left||''; $('#footerRight').textContent=site.footer?.right||'';

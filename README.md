@@ -26,7 +26,7 @@
 
 ## 长期管理
 
-- 网站名称、首页介绍、关于页：编辑 `content/site.json`
+- 网站名称、首页介绍、关于页：首页的“主页 / GitHub / Email”显示项都在 `content/site.json`；默认保留原位置，但 `url` 留空，由你自己填写
 - 新文章：复制 `content/articles/example/`，修改正文文件，再向 `content/articles/index.json` 添加一条记录
 - 新相册：复制 `content/albums/example/`，把照片放进该相册自己的 `images/`，修改 `album.json`，再向 `content/albums/index.json` 添加一条记录
 - 新动态：编辑 `content/moments/moments.json`

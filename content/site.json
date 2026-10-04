@@ -10,7 +10,20 @@
     "name": "三七",
     "role": "记录生活、设计与技术",
     "bio": "慢慢写，慢慢拍，也把喜欢的东西留在自己的互联网角落。",
-    "links": []
+    "links": [
+      {
+        "label": "主页",
+        "url": ""
+      },
+      {
+        "label": "GitHub",
+        "url": ""
+      },
+      {
+        "label": "Email",
+        "url": ""
+      }
+    ]
   },
   "about": {
     "avatar": "三七",
